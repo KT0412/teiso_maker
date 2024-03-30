@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>定礎メーカー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>定礎メーカー</h1>
+        <div id="main-contents">
+            <h2 id="teiso">定礎</h2>
+            <p id="Date"></p>
+        </div>
+        <div class="edit-contents">
+            <h3>定礎を編集</h3>
+            <div class="teiso-background">
+                <form id="background-box">
+                    <div class="background-con">
+                        <div class="background-sample black">
+                        </div>
+                        <button type="button" id="black">黒色に変更する</button>
+                    </div>
+                    <div class="background-con">
+                        <div class="background-sample gray">
+                        </div>
+                        <button type="button" id="gray">灰色に変更する</button>
+                    </div>
+                    <div class="background-con">
+                        <div class="background-sample brown">
+                        </div>
+                        <button type="button" id="brown">灰色に変更する</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="teiso-color">
+                <h3>文字色を編集</h3>
+                <form id="color-box">
+                    <h4>テンプレート</h4>
+                    <div class="color-group">
+                        <div class="color-vari">
+                            <button type="button" id="color-gray">灰色に変更する</button>
+                        </div>
+                        <div class="color-vari">
+                            <button type="button" id="color-black-gray">濃い灰色に変更する</button>
+                        </div>
+                        <div class="color-vari">
+                            <button type="button" id="color-white">白色に変更する</button>
+                        </div>
+                    </div>
+                    <div class="color-con">
+                        <h4>カラーパレット</h4>
+                        <input type="color" id="color-edit"></input>
+                        <button type="button" id="color-button">文字色を変更する</button>
+                    </div>
+                </form>
+            </div>
+            <img id="capturedImage" alt="Captured Image">
+
+        </div>
+
+    </div>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
